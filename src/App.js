@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      Placeholder
+      Moin hier ist der Cengole
     </div>
   );
 }
