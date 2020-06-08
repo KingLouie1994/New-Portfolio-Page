@@ -6,7 +6,7 @@ function Welcome() {
   return (
     <div className={styles.container}>
       <img src={Logo} alt="Logo" className={styles.logo} />
-      <h1 style={{color: "white"}}>Portfolio Page comming soon</h1>
+      <h2 style={{color: "white"}}>Portfolio Page comming soon</h2>
     </div>
   );
 }
