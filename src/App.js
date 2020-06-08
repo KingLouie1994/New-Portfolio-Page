@@ -1,12 +1,8 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import Welcome from "./components/Welcome/Welcome";
 
 function App() {
-  return (
-    <div className="App">
-      Moin hier ist der Cengole
-    </div>
-  );
+  return <Welcome />;
 }
 
 export default App;
