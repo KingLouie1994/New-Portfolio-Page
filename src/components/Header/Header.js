@@ -1,18 +1,20 @@
 import React, { useContext } from "react";
 import { DarkModeContext } from "../Darkmode/darkModeContext";
+import Brightness5OutlinedIcon from "@material-ui/icons/Brightness5Outlined";
+import NightsStayOutlinedIcon from "@material-ui/icons/NightsStayOutlined";
 import styles from "./Header.module.css";
 import Portrait from "../../images/Portrait.jpeg";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useContext(DarkModeContext);
 
-  const toggleDarkMode = (e) => {
+  const switchDarkMode = (e) => {
     e.preventDefault();
     setDarkMode(!darkMode);
   };
 
   return (
-    <div className={styles.container}>
+    <div className={darkMode ? styles.containerDark : styles.container}>
       <div className={styles.nameAndImage}>
         <div className={styles.portraitContainer}>
           <img src={Portrait} alt={"Portrait"} className={styles.portrait} />
@@ -23,29 +25,44 @@ const Header = () => {
       </div>
       <div className={styles.navigation}>
         <nav>
-          <a href="#lol" className={styles.navElement}>
+          <a
+            href="#lol"
+            className={darkMode ? styles.navElementDark : styles.navElement}
+          >
             About
           </a>
-          <a href="#lol" className={styles.navElement}>
+          <a
+            href="#lol"
+            className={darkMode ? styles.navElementDark : styles.navElement}
+          >
             Projects
           </a>
-          <a href="#lol" className={styles.navElement}>
+          <a
+            href="#lol"
+            className={darkMode ? styles.navElementDark : styles.navElement}
+          >
             Contact
           </a>
-          <a href="#lol" className={styles.navElement}>
+          <a
+            href="#lol"
+            className={darkMode ? styles.navElementDark : styles.navElement}
+          >
             Social Media
           </a>
-          {darkMode ? (
-          <a href="#lol" onClick={toggleDarkMode} className={styles.navElement}>Dark</a>
-        ) : (
-          <a href="#lol" onClick={toggleDarkMode} className={styles.navElement}>Not dark</a>
-        )}
         </nav>
-        {/* {darkMode ? (
-          <p onClick={toggleDarkMode}>Dark</p>
+        {darkMode ? (
+          <Brightness5OutlinedIcon
+            style={{ fontSize: 30 }}
+            className={styles.sun}
+            onClick={switchDarkMode}
+          />
         ) : (
-          <p onClick={toggleDarkMode}>Not dark</p>
-        )} */}
+          <NightsStayOutlinedIcon
+            style={{ fontSize: 30 }}
+            className={styles.moon}
+            onClick={switchDarkMode}
+          />
+        )}
       </div>
     </div>
   );

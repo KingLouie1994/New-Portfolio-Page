@@ -7,7 +7,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.containerDark {
+  position: absolute;
+  z-index: 0;
+  background-color: black;
+  width: 100vw;
+  height: 12.5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
 }
 
 .nameAndImage {
@@ -17,9 +30,9 @@
 }
 
 .portraitContainer {
-    margin-left: 4em;
-    margin-right: 4em;
-    width: 12vh;
+  margin-left: 4em;
+  margin-right: 4em;
+  width: 12vh;
 }
 
 .portrait {
@@ -30,6 +43,7 @@
 .navigation {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   width: 65vw;
   margin-right: 3vh;
 }
@@ -41,4 +55,27 @@
   padding-left: 1em;
   padding-top: 0.5em;
   border-left: solid 1px #a09fa5;
+}
+
+.navElementDark {
+  color: white;
+  text-decoration: none;
+  margin-right: 3em;
+  padding-left: 1em;
+  padding-top: 0.5em;
+  border-left: solid 1px white;
+}
+
+.sun {
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.moon {
+  color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 3px;
 }
