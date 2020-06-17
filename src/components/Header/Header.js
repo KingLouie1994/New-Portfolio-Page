@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DarkModeContext } from "../Darkmode/darkModeContext";
 import styles from "./Header.module.css";
 import Portrait from "../../images/Portrait.jpeg";
 
-function Header() {
+const Header = () => {
+  const [darkMode, setDarkMode] = useContext(DarkModeContext);
+
+  const toggleDarkMode = (e) => {
+    e.preventDefault();
+    setDarkMode(!darkMode);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.nameAndImage}>
         <div className={styles.portraitContainer}>
-            <img src={Portrait} alt={"Portrait"} className={styles.portrait}/>
+          <img src={Portrait} alt={"Portrait"} className={styles.portrait} />
         </div>
         <div>
           <h1>Luis Schekerka</h1>
@@ -27,10 +35,20 @@ function Header() {
           <a href="#lol" className={styles.navElement}>
             Social Media
           </a>
+          {darkMode ? (
+          <a href="#lol" onClick={toggleDarkMode} className={styles.navElement}>Dark</a>
+        ) : (
+          <a href="#lol" onClick={toggleDarkMode} className={styles.navElement}>Not dark</a>
+        )}
         </nav>
+        {/* {darkMode ? (
+          <p onClick={toggleDarkMode}>Dark</p>
+        ) : (
+          <p onClick={toggleDarkMode}>Not dark</p>
+        )} */}
       </div>
     </div>
   );
-}
+};
 
 export default Header;

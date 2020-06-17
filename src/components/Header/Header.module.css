@@ -11,7 +11,7 @@
 }
 
 .nameAndImage {
-  width: 35%;
+  width: 35vw;
   display: flex;
   align-items: center;
 }
@@ -30,7 +30,7 @@
 .navigation {
   display: flex;
   justify-content: flex-end;
-  width: 65%;
+  width: 65vw;
   margin-right: 3vh;
 }
 
