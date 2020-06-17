@@ -1,5 +1,4 @@
 .container {
-  position: absolute;
   z-index: 0;
   background-color: #ebebef;
   width: 100vw;
@@ -11,7 +10,6 @@
 }
 
 .containerDark {
-  position: absolute;
   z-index: 0;
   background-color: black;
   width: 100vw;
