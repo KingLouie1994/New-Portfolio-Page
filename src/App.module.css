@@ -1,3 +1,9 @@
 .app {
   padding-bottom: 5rem;
+  background-color: white;
+}
+
+.appDark {
+  padding-bottom: 5rem;
+  background-color: #4e5b66;
 }
