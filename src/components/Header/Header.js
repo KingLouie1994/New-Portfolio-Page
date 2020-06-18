@@ -43,12 +43,6 @@ const Header = () => {
           >
             Contact
           </a>
-          <a
-            href="#lol"
-            className={darkMode ? styles.navElementDark : styles.navElement}
-          >
-            Social Media
-          </a>
         </nav>
         {darkMode ? (
           <Brightness5OutlinedIcon
