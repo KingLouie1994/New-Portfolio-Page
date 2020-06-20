@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DarkModeContext } from "../Darkmode/darkModeContext";
 import styles from "./About.module.css";
 import HTML from "../../images/HTML.png";
 import CSS from "../../images/CSS.png";
@@ -10,8 +11,10 @@ import MySQL from "../../images/MySQL.png";
 import Resume from "../../CV/resume.pdf";
 
 const About = () => {
+  const [darkMode] = useContext(DarkModeContext);
+
   return (
-    <div className={styles.container}>
+    <div className={darkMode ? styles.containerDark : styles.container}>
       <div className={styles.logoDiv}>
         <a
           target="_blank"
@@ -78,7 +81,7 @@ const About = () => {
         </p>
         <h2>
           To learn more about me, click{" "}
-          <a target="_blank" rel="noopener noreferrer" href={Resume}>
+          <a className={styles.resume} target="_blank" rel="noopener noreferrer" href={Resume}>
             here
           </a>
           , for my resume
