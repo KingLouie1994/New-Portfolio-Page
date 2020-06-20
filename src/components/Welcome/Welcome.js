@@ -27,7 +27,7 @@ function Welcome() {
   return (
     <div className={styles.container} style={theStyle}>
       <img src={Logo} alt="Logo" className={styles.logo} />
-      <h2 style={{ color: "white" }}>Portfolio Page comming soon</h2>
+      <h1 style={{ color: "white" }}>Welcome to my portfolio Page</h1>
     </div>
   );
 }

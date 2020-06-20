@@ -8,7 +8,7 @@ const Contact = () => {
   const [darkMode] = useContext(DarkModeContext);
 
   return (
-    <div className={darkMode ? styles.containerDark : styles.container}>
+    <div className={darkMode ? styles.containerDark : styles.container} id={"contact"}>
       <div className={styles.callToAction}>
         <h1>Contact me however you want, whenever you want!</h1>
         <h2>
