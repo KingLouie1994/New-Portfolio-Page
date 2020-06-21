@@ -8,6 +8,7 @@ import ReactLogo from "../../images/ReactLogo.png";
 import Node from "../../images/Node.png";
 import Mongo from "../../images/MongoDB.png";
 import MySQL from "../../images/MySQL.png";
+import Python from "../../images/Python.png";
 import Resume from "../../CV/resume.pdf";
 
 const About = () => {
@@ -65,6 +66,13 @@ const About = () => {
         >
           <img src={MySQL} alt="MySQL" className={styles.logo} />
         </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://docs.python.org/3/"
+        >
+          <img src={Python} alt="Python" className={styles.logo} />
+        </a>
       </div>
       <div className={styles.textDiv}>
         <p className={styles.text}>
@@ -81,7 +89,12 @@ const About = () => {
         </p>
         <h2>
           To learn more about me, click{" "}
-          <a className={styles.resume} target="_blank" rel="noopener noreferrer" href={Resume}>
+          <a
+            className={styles.resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            href={Resume}
+          >
             here
           </a>
           , for my resume
@@ -136,6 +149,13 @@ const About = () => {
           href="https://dev.mysql.com/doc/"
         >
           <img src={MySQL} alt="MySQL" className={styles.logo} />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://docs.python.org/3/"
+        >
+          <img src={Python} alt="Python" className={styles.logo} />
         </a>
       </div>
     </div>
