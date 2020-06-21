@@ -3,6 +3,7 @@ import styles from "./Contact.module.css";
 import { DarkModeContext } from "../Darkmode/darkModeContext";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import MailOutlinedIcon from "@material-ui/icons/MailOutlined";
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const Contact = () => {
   const [display, setDisplay] = useState("none");
@@ -32,6 +33,16 @@ const Contact = () => {
           href="https://www.linkedin.com/in/luisschekerka/"
         >
           <LinkedInIcon
+            style={{ fontSize: 100 }}
+            className={darkMode ? styles.iconDark : styles.icon}
+          />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/KingLouie1994"
+        >
+          <GitHubIcon
             style={{ fontSize: 100 }}
             className={darkMode ? styles.iconDark : styles.icon}
           />
