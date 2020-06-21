@@ -1,14 +1,23 @@
-import React, { useContext } from "react";
+import React, { useState, useContext } from "react";
 import styles from "./Contact.module.css";
 import { DarkModeContext } from "../Darkmode/darkModeContext";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import MailOutlinedIcon from "@material-ui/icons/MailOutlined";
 
 const Contact = () => {
+  const [display, setDisplay] = useState("none");
   const [darkMode] = useContext(DarkModeContext);
 
+  setTimeout(() => {
+    setDisplay("");
+  }, 5000);
+
   return (
-    <div className={darkMode ? styles.containerDark : styles.container}>
+    <div
+      className={darkMode ? styles.containerDark : styles.container}
+      id={"contact"}
+      style={{ display: `${display}` }}
+    >
       <div className={styles.callToAction}>
         <h1>Contact me however you want, whenever you want!</h1>
         <h2>

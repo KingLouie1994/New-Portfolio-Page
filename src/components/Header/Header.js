@@ -38,7 +38,7 @@ const Header = () => {
             Projects
           </a>
           <a
-            href="#lol"
+            href="#contact"
             className={darkMode ? styles.navElementDark : styles.navElement}
           >
             Contact
