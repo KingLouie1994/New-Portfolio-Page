@@ -1,10 +1,56 @@
 .container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 3vw;
 }
 
-.containerDark{
+.containerDark {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 3vw;
+}
+
+.heading {
+    margin-top: 0;
+    margin-bottom: 4vw;
+}
+
+.cardHolder {
     display: flex;
-    justify-content: center;
-    color: white;
+    flex-wrap: wrap;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 42vw;
+  margin-left: 3.6vw;
+  margin-right: 3.6vw;
+  margin-bottom: 2vw;
+  border: solid 2px orange;
+  border-radius: 1vw;
+}
+
+.rubric {
+    display: flex;
+    width: 75%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.icon {
+    color: black;
+}
+
+.screenshot {
+    width: 100%;
+    height: auto;
+    border-radius: 1vw;
 }
