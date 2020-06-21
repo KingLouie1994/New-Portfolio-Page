@@ -4,6 +4,7 @@ import { DarkModeContext } from "./components/Darkmode/darkModeContext";
 import Welcome from "./components/Welcome/Welcome";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Copyright from "./components/Copyright/Copyright";
 
@@ -20,6 +21,7 @@ function App() {
       <Welcome />
       <Header />
       <About />
+      <Projects />
       <Contact />
       <Copyright />
     </div>

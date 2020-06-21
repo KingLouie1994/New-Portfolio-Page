@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.containerDark{
+    display: flex;
+    justify-content: center;
+    color: white;
+}

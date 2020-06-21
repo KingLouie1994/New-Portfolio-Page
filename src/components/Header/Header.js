@@ -26,13 +26,13 @@ const Header = () => {
       <div className={styles.navigation}>
         <nav>
           <a
-            href="#lol"
+            href="#about"
             className={darkMode ? styles.navElementDark : styles.navElement}
           >
             About
           </a>
           <a
-            href="#lol"
+            href="#projects"
             className={darkMode ? styles.navElementDark : styles.navElement}
           >
             Projects

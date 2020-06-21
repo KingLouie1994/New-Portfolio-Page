@@ -15,7 +15,10 @@ const About = () => {
   const [darkMode] = useContext(DarkModeContext);
 
   return (
-    <div className={darkMode ? styles.containerDark : styles.container}>
+    <div
+      className={darkMode ? styles.containerDark : styles.container}
+      id={"about"}
+    >
       <div className={styles.logoDiv}>
         <a
           target="_blank"
