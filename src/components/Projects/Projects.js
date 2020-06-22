@@ -21,12 +21,23 @@ const Projects = () => {
       style={{ display: `${display}` }}
     >
       <h1 className={styles.heading}>My Projects</h1>
-      <h2 className={styles.heading}>Each project has a full write up and tech stack documentation on the GitHub Repos!</h2>
+      <h2 className={styles.heading}>
+        Each project has a full write up and tech stack documentation on the
+        GitHub Repos!
+      </h2>
       <div className={styles.cardHolder}>
         {Allprojects.map((project) => {
           return (
             <div className={styles.projectCard}>
-              <h2>{project.name}</h2>
+              <div className={styles.projectName}>
+                <img
+                  src={`ProjectLogos/${project.name}.png`}
+                  alt={`${project.name}`}
+                  className={styles.logo}
+                />{" "}
+                <h2>{project.name}</h2>
+              </div>
+              <h3 className={styles.description}>{project.desciption}</h3>
               <h3 className={styles.rubric}>
                 Visit the Application:
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
@@ -68,7 +79,7 @@ const Projects = () => {
                   {project.techStack.map((element) => {
                     return (
                       <img
-                        src={`Logos/${element}.png`}
+                        src={`LanguageIcons/${element}.png`}
                         alt={`${element}`}
                         className={
                           darkMode ? styles.languageDark : styles.language
@@ -78,6 +89,7 @@ const Projects = () => {
                   })}
                 </div>
               </h3>
+              <h3 className={styles.role}>{project.role}</h3>
             </div>
           );
         })}

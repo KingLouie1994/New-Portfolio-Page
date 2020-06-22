@@ -16,7 +16,7 @@ const About = () => {
         {skills.map((language) => {
           return (
             <img
-              src={`Logos/${language}.png`}
+              src={`LanguageIcons/${language}.png`}
               alt="html"
               className={styles.logo}
             />
@@ -53,7 +53,7 @@ const About = () => {
         {skills.map((language) => {
           return (
             <img
-              src={`Logos/${language}.png`}
+              src={`LanguageIcons/${language}.png`}
               alt="html"
               className={styles.logo}
             />
