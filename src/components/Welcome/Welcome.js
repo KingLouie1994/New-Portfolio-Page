@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Welcome.module.css";
-import Logo from "../../images/Logo_KLC.png";
+import Logo from "../../logos/Logo_KLC.png";
 
 function Welcome() {
   const [zindex, setZindex] = useState(1);

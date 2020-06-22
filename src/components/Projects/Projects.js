@@ -21,16 +21,17 @@ const Projects = () => {
       style={{ display: `${display}` }}
     >
       <h1 className={styles.heading}>My Projects</h1>
+      <h2 className={styles.heading}>Each project has a full write up and tech stack documentation on the GitHub Repos!</h2>
       <div className={styles.cardHolder}>
-        {Allprojects.map((e) => {
+        {Allprojects.map((project) => {
           return (
             <div className={styles.projectCard}>
-              <h2>{e.name}</h2>
+              <h2>{project.name}</h2>
               <h3 className={styles.rubric}>
                 Visit the Application:
-                <a href={e.url} target="_blank" rel="noopener noreferrer">
+                <a href={project.url} target="_blank" rel="noopener noreferrer">
                   <LanguageIcon
-                    className={styles.icon}
+                    className={darkMode ? styles.iconDark : styles.icon}
                     style={{ fontSize: 40 }}
                   />
                 </a>
@@ -38,12 +39,12 @@ const Projects = () => {
               <h3 className={styles.rubric}>
                 Frontend Repository:
                 <a
-                  href={e.gitHubFrontend}
+                  href={project.gitHubFrontend}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <GitHubIcon
-                    className={styles.icon}
+                    className={darkMode ? styles.iconDark : styles.icon}
                     style={{ fontSize: 40 }}
                   />
                 </a>
@@ -51,15 +52,31 @@ const Projects = () => {
               <h3 className={styles.rubric}>
                 Backend Repository:
                 <a
-                  href={e.gitHubBackend}
+                  href={project.gitHubBackend}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <GitHubIcon
-                    className={styles.icon}
+                    className={darkMode ? styles.iconDark : styles.icon}
                     style={{ fontSize: 40 }}
                   />
                 </a>
+              </h3>
+              <h3 className={styles.rubric}>
+                Tech Stack:
+                <div className={styles.techstack}>
+                  {project.techStack.map((element) => {
+                    return (
+                      <img
+                        src={`Logos/${element}.png`}
+                        alt={`${element}`}
+                        className={
+                          darkMode ? styles.languageDark : styles.language
+                        }
+                      />
+                    );
+                  })}
+                </div>
               </h3>
             </div>
           );

@@ -3,7 +3,7 @@ import { DarkModeContext } from "../Darkmode/darkModeContext";
 import Brightness5OutlinedIcon from "@material-ui/icons/Brightness5Outlined";
 import NightsStayOutlinedIcon from "@material-ui/icons/NightsStayOutlined";
 import styles from "./Header.module.css";
-import Portrait from "../../images/Portrait.jpeg";
+import Portrait from "../../logos/Portrait.jpeg";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useContext(DarkModeContext);
