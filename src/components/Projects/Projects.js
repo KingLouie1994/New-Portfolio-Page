@@ -61,13 +61,6 @@ const Projects = () => {
                   />
                 </a>
               </h3>
-              <a href={e.url} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={`project_screenshots/${e.id}_screenshot.jpeg`}
-                  alt={`${e.name}`}
-                  className={styles.screenshot}
-                />
-              </a>
             </div>
           );
         })}
