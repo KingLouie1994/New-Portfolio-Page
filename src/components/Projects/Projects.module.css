@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 3vw;
+}
+
+.containerDark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 3vw;
+  color: white;
+}
+
+.heading {
+  margin-top: 0;
+  margin-bottom: 4vw;
+}
+
+.cardHolder {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 42vw;
+  margin-left: 3.6vw;
+  margin-right: 3.6vw;
+  margin-bottom: 5vw;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 60px 40px rgba(0, 0, 0, 0.12);
+}
+
+.projectName {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.description {
+  text-align: center;
+  margin: 5%;
+}
+
+.rubric {
+  display: flex;
+  width: 75%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+.icon {
+  color: black;
+}
+
+.iconDark {
+  color: white;
+}
+
+.techstack {
+  display: flex;
+}
+
+.language {
+  width: 50px;
+  height: auto;
+  border-radius: 20%;
+  border: solid 2px black;
+  margin-left: 1vw;
+}
+
+.languageDark {
+  width: 50px;
+  height: auto;
+  border-radius: 20%;
+  border: solid 2px white;
+  margin-left: 1vw;
+  background-color: white;
+}
+
+.role {
+  text-align: justify;
+  margin: 5%;
+}
