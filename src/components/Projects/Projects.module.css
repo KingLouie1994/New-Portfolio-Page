@@ -76,7 +76,7 @@
 
 .language {
   width: 50px;
-  height: auto;
+  height: 50px;
   border-radius: 20%;
   border: solid 2px black;
   margin-left: 1vw;
@@ -84,7 +84,7 @@
 
 .languageDark {
   width: 50px;
-  height: auto;
+  height: 50px;
   border-radius: 20%;
   border: solid 2px white;
   margin-left: 1vw;
