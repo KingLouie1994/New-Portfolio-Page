@@ -39,6 +39,11 @@
   padding-right: 5vw;
 }
 
+.welcome {
+  width: 100%;
+  text-align: start;
+}
+
 .text {
   font-size: 22px;
   text-align: justify;

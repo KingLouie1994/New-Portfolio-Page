@@ -24,6 +24,10 @@ const About = () => {
         })}
       </div>
       <div className={styles.textDiv}>
+        <h1 className={styles.welcome}>
+          Hey, I'm Luis! <br />
+          Welcome to my Portfolio Page
+        </h1>
         <p className={styles.text}>
           Even as a child I spent most of my free time playing around with
           computers. Time flew by as soon as I sat down at a keyboard, whether I
