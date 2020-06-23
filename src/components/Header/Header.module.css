@@ -28,11 +28,11 @@
 .portraitContainer {
   margin-left: 4em;
   margin-right: 4em;
-  width: 12vh;
+  width: 12.5vh;
 }
 
 .portrait {
-  width: 100%;
+  width: 12.5vh;
   border-radius: 50%;
 }
 
