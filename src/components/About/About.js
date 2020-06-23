@@ -25,19 +25,36 @@ const About = () => {
       </div>
       <div className={styles.textDiv}>
         <p className={styles.text}>
-          After graduating in civil- and environmental engineering in Hamburg I
-          discovered my passion for programming. Now that I have completed
-          Lambda School I started working as a freelancer in the field of web
-          development. In the frontend area, I preferably work with Vanilla
-          Javascript or React. Backend tasks I can best solve with Node, using
-          MongoDB or MySQL as the database management system. I can combine my
-          experience in founding and consulting companies and the accompanying
-          of the growth of these companies with my technical know-how, to
-          provide valuable input for the alignment of the company strategy and
-          the general business development.
+          Even as a child I spent most of my free time playing around with
+          computers. Time flew by as soon as I sat down at a keyboard, whether I
+          was playing or tinkering with something. This is still the case today,
+          and my job as a web developer gives me the chance to live this passion
+          every day. <br />
+          <br />I started programming 3 years ago. After a three month
+          beginner's course at Udemy, I expanded and improved my skills for one
+          and a half years through various providers on the Internet. Then I
+          discovered{" "}
+          <a
+            href="https://lambdaschool.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.lambdaLink}
+          >
+            Lambda School
+          </a>
+          . For nine months I took a full-time course in Full Stack Web
+          Development to be able to develop front- and backend of a web
+          application. <br />
+          <br /> Now I offer my services as a developer. My strengths lie in Web
+          applications built in Vanilla JavaScript or React for the frontend.
+          For the backend I prefer Node.js with Express to build it and MongoDB
+          or MySQL as database management system. Depending on the size of the
+          project I work alone or in a team that you can provide as a customer
+          or I can put together for you. If you're interested in a first meeting
+          or a call, just scroll to the contact section!
         </p>
         <h2>
-          To learn more about me, click{" "}
+          You want to know more about me?{" "}
           <a
             className={styles.resume}
             target="_blank"
@@ -46,7 +63,7 @@ const About = () => {
           >
             here
           </a>
-          , for my resume
+          is my resume!
         </h2>
       </div>
       <div className={styles.logoDiv}>
