@@ -3,7 +3,6 @@ import { DarkModeContext } from "../Darkmode/darkModeContext";
 import Brightness5OutlinedIcon from "@material-ui/icons/Brightness5Outlined";
 import NightsStayOutlinedIcon from "@material-ui/icons/NightsStayOutlined";
 import styles from "./Header.module.css";
-import Portrait from "../../logos/Portrait.jpeg";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useContext(DarkModeContext);
@@ -15,12 +14,9 @@ const Header = () => {
 
   return (
     <div className={darkMode ? styles.containerDark : styles.container}>
-      <div className={styles.nameAndImage}>
-        <div className={styles.portraitContainer}>
-          <img src={Portrait} alt={"Portrait"} className={styles.portrait} />
-        </div>
+      <div className={styles.name}>
         <div>
-          <h1>Luis Schekerka</h1>
+          <h1 style={{fontSize: "40px"}}>Luis Schekerka</h1>
         </div>
       </div>
       <div className={styles.navigation}>

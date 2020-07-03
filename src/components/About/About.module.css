@@ -39,6 +39,18 @@
   padding-right: 5vw;
 }
 
+.greeting {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.portrait {
+  width: 7vw;
+  border-radius: 50%;
+  margin-right: 2vw;
+}
+
 .welcome {
   width: 100%;
   text-align: start;
@@ -50,14 +62,14 @@
 }
 
 .lambdaLink {
-color: orange;
+  color: orange;
 }
 
 .resume {
-    text-decoration: none;
-    padding: 4px;
-    margin: 2px;
-    border: solid 1px orange;
-    border-radius: 10%;
-    color: orange;
+  text-decoration: none;
+  padding: 4px;
+  margin-right: 10px;
+  border: solid 1px orange;
+  border-radius: 10%;
+  color: orange;
 }

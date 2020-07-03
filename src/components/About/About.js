@@ -3,6 +3,7 @@ import { DarkModeContext } from "../Darkmode/darkModeContext";
 import styles from "./About.module.css";
 import skills from "./technicalSkills";
 import Resume from "../../CV/resume.pdf";
+import Portrait from "../../logos/Portrait.jpeg";
 
 const About = () => {
   const [darkMode] = useContext(DarkModeContext);
@@ -24,10 +25,13 @@ const About = () => {
         })}
       </div>
       <div className={styles.textDiv}>
-        <h1 className={styles.welcome}>
-          Hey, I'm Luis! <br />
-          Welcome to my Portfolio Page
-        </h1>
+        <div className={styles.greeting}>
+          <img src={Portrait} alt={"Portrait"} className={styles.portrait} />
+          <h1 className={styles.welcome}>
+            Hey, I'm Luis! <br />
+            Welcome to my Portfolio Page
+          </h1>
+        </div>
         <p className={styles.text}>
           Even as a child I spent most of my free time playing around with
           computers. Time flew by as soon as I sat down at a keyboard, whether I
@@ -36,7 +40,7 @@ const About = () => {
           every day. <br />
           <br />I started programming 3 years ago. After a three month
           beginner's course at Udemy, I expanded and improved my skills for one
-          and a half years through various providers on the Internet. Then I
+          and a half years through various online course providers. Then I
           discovered{" "}
           <a
             href="https://lambdaschool.com/"

@@ -19,21 +19,11 @@
   color: white;
 }
 
-.nameAndImage {
-  width: 35vw;
+.name {
+  margin-left: 5vw;
+  width: 30vw;
   display: flex;
   align-items: center;
-}
-
-.portraitContainer {
-  margin-left: 4em;
-  margin-right: 4em;
-  width: 12.5vh;
-}
-
-.portrait {
-  width: 12.5vh;
-  border-radius: 50%;
 }
 
 .navigation {
