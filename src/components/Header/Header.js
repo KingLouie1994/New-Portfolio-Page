@@ -16,7 +16,7 @@ const Header = () => {
     <div className={darkMode ? styles.containerDark : styles.container}>
       <div className={styles.name}>
         <div>
-          <h1 style={{fontSize: "40px"}}>Luis Schekerka</h1>
+          <h1>Luis Schekerka</h1>
         </div>
       </div>
       <div className={styles.navigation}>
