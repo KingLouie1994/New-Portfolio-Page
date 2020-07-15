@@ -95,3 +95,18 @@
   text-align: justify;
   margin: 5%;
 }
+
+@media (max-width: 1200px) {
+  .heading {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    text-align: center;
+  }
+
+  .projectCard {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+  }
+}
