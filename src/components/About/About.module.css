@@ -65,11 +65,30 @@
   color: orange;
 }
 
-.resume {
+.resumeLink {
   text-decoration: none;
   padding: 4px;
   margin-right: 10px;
   border: solid 1px orange;
   border-radius: 10%;
   color: orange;
+}
+
+@media (max-width: 1200px) {
+  .text {
+    font-size: 16px;
+  }
+
+  .greeting {
+    font-size: 12px;
+  }
+
+  .resume {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .resumeLink {
+    padding: 2px;
+  }
 }

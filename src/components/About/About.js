@@ -61,10 +61,10 @@ const About = () => {
           or I can put together for you. If you're interested in a first meeting
           or a call, just scroll to the contact section!
         </p>
-        <h2>
+        <h2 className={styles.resume}>
           You want to know more about me?{" "}
           <a
-            className={styles.resume}
+            className={styles.resumeLink}
             target="_blank"
             rel="noopener noreferrer"
             href={Resume}
