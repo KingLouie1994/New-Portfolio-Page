@@ -7,22 +7,9 @@ function Welcome() {
   const [opacity, setOpacity] = useState(1);
   const [display, setDisplay] = useState();
 
-  function disableScrolling() {
-    var x = window.scrollX;
-    var y = window.scrollY;
-    window.onscroll = function () {
-      window.scrollTo(x, y);
-    };
-  }
-
-  function enableScrolling() {
-    window.onscroll = function () {};
-  }
-
   setTimeout(() => {
     setZindex(0);
     setDisplay("none");
-    enableScrolling();
   }, 5000);
 
   if (opacity <= 1 && opacity > 0) {
@@ -36,8 +23,6 @@ function Welcome() {
     opacity: `${opacity}`,
     display: `${display}`,
   };
-
-  disableScrolling();
 
   return (
     <div className={styles.container} style={theStyle}>
