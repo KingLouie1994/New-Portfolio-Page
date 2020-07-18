@@ -82,5 +82,20 @@
 }
 
 @media (max-width: 750px) {
-  
+  .name {
+    font-size: 14px;
+    width: 100vw;
+  }
+
+  .navigation {
+    width: 20vw;
+  }
+
+  .navElement {
+    display: none;
+  }
+
+  .navElementDark {
+    display: none;
+  }
 }

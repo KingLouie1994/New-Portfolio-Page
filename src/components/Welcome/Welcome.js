@@ -7,9 +7,22 @@ function Welcome() {
   const [opacity, setOpacity] = useState(1);
   const [display, setDisplay] = useState();
 
+  function disableScrolling() {
+    var x = window.scrollX;
+    var y = window.scrollY;
+    window.onscroll = function () {
+      window.scrollTo(x, y);
+    };
+  }
+
+  function enableScrolling() {
+    window.onscroll = function () {};
+  }
+
   setTimeout(() => {
     setZindex(0);
     setDisplay("none");
+    enableScrolling();
   }, 5000);
 
   if (opacity <= 1 && opacity > 0) {
@@ -24,10 +37,14 @@ function Welcome() {
     display: `${display}`,
   };
 
+  disableScrolling();
+
   return (
     <div className={styles.container} style={theStyle}>
       <img src={Logo} alt="Logo" className={styles.logo} />
-      <h1 style={{ color: "white" }}>Welcome to my portfolio Page</h1>
+      <h1 className={styles.welcome} style={{ color: "white" }}>
+        Welcome to my portfolio Page
+      </h1>
     </div>
   );
 }

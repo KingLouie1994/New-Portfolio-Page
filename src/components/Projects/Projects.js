@@ -20,8 +20,8 @@ const Projects = () => {
       id={"projects"}
       style={{ display: `${display}` }}
     >
-      <h1 className={styles.heading}>My Projects</h1>
-      <h2 className={styles.heading}>
+      <h1 className={styles.heading} style={{fontWeight: "900"}}>My Projects</h1>
+      <h2 className={styles.subHeading}>
         Each project has a full write up and tech stack documentation on the
         GitHub Repos!
       </h2>

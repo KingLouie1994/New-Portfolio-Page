@@ -13,7 +13,7 @@ const About = () => {
       className={darkMode ? styles.containerDark : styles.container}
       id={"about"}
     >
-      <div className={styles.logoDiv}>
+      <div className={styles.logoDivLeft}>
         {skills.map((language) => {
           return (
             <img
@@ -74,7 +74,7 @@ const About = () => {
           is my resume!
         </h2>
       </div>
-      <div className={styles.logoDiv}>
+      <div className={styles.logoDivRight}>
         {skills.map((language) => {
           return (
             <img

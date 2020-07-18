@@ -20,6 +20,11 @@
   margin-bottom: 4vw;
 }
 
+.subHeading {
+  margin-top: 0;
+  margin-bottom: 4vw;
+}
+
 .cardHolder {
   display: flex;
   flex-wrap: wrap;
@@ -104,9 +109,61 @@
     text-align: center;
   }
 
+  .subHeading {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    text-align: center;
+  }
+
   .projectCard {
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
+  }
+}
+
+@media (max-width: 750px) {
+  .heading {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .subHeading {
+    font-size: 16px;
+  }
+
+  .techstack {
+    flex-wrap: wrap;
+  }
+
+  .projectName {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .rubric {
+    font-size: 16px;
+  }
+
+  .language {
+    width: 40px;
+    height: 40px;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+  }
+
+  .languageDark {
+    width: 40px;
+    height: 40px;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+  }
+
+  .role {
+    font-size: 16px;
   }
 }
