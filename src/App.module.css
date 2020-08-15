@@ -5,8 +5,3 @@
 .appDark {
   background-color: #4e5b66;
 }
-
-.stopScrolling {
-  height: 100%;
-  overflow: hidden;
-}
