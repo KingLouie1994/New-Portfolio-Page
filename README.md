@@ -1,4 +1,4 @@
-# My second attempt to build a portfolio page for me
+# My second attempt to build a portfolio page for myself
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
